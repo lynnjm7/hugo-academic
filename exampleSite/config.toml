@@ -88,8 +88,8 @@ googleAnalytics = ""
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications"
+  name = "Presentations"
+  url = "#Presentation"
   weight = 2
 
 [[menu.main]]

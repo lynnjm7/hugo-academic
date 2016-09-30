@@ -69,6 +69,37 @@
           </div>
           {{ end }}
 
+          {{ with .Params.skills }}
+          <div class="col-sm-7">
+            <h3>{{ .title | default "Skills" | markdownify }}</h3>
+            <ul class="ul-interests">
+                <li>
+                  {{ range .languages }}
+                        {{ delimit .langs ", "}}
+                  {{ end }}
+                </li>
+
+                <li>
+                  {{ range .tools }}
+                      {{ delimit .tools ", " }}
+                  {{ end }}
+                </li>
+
+                <li>
+                  {{ range .db }}
+                      {{ delimit .databases ", " }}
+                  {{ end }}
+                </li>
+
+                <li>
+                  {{ range .libs }}
+                      {{ delimit .libraries ", " }}
+                  {{ end }}
+                </li>
+            </ul>
+          </div>
+          {{ end }}
+
         </div>
 
       </div>
